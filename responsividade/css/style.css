@@ -224,6 +224,121 @@ img{
 }
 
 
+/* MEDIA TYPES BREAKPOINTS = PONTOS DE AJUSTE */
+
+/* MOBILE FIRST */
+/* SMALL DEVICES - SMARTPHONES */
+@media screen and (min-width: 480px){  /* quando chegar na largura de 480 os elementos se reajustam */
+    .logo{
+        width: 214px;
+        background: url(../img/logo.png) center center/214px no-repeat;
+        
+        }
+    .btn{
+        font-size: 2em;
+    }
+    }
+
+/* SMALL DEVICES - TABLETS */
+@media screen and (min-width: 768px){ /* quando chegar na largura de 768 os elementos se reajustam*/
+    .servico{
+        width: 49%;
+        float: left;
+        margin-right: 2%;
+    }
+    .servico:nth-child(2){
+        margin-right: 0;
+    }
+    .newsletter h2{
+        font-size: 2em;
+    }
+    .newsletter h3{
+        font-size: 1.5em;
+    }
+    .newsletter input{
+        width: 70%;
+        padding: 2%;
+        float: left;
+        margin-right: 1%;
+    }
+    .newsletter button{
+        width: 29%;
+        padding: 2%;
+        float: right;
+        margin-top: 0;
+    }
+    }
+
+/* MEDIUM DEVICES  - TABLETS & DESKTOPS */
+@media screen and (min-width: 960px){ /* quando chegar na largura de 960 os elementos se reajustam*/
+    .title{
+        width: 70%;
+        float: left;
+        text-align: left;
+    }
+    title h2{
+        font-size: 3em;
+    }
+    title h3{
+        font-size: 2em;
+    }
+    .buttons{
+        width: 30%;
+        float: right;
+        margin-top: 0;
+    }
+    .servico{
+        width: 32%;
+    }
+    .servico:nth-child(2){ /* aplicando a margem no segundo elemento de servico para nao ficar colado */
+        margin-right: 2%;
+    }
+    .servico:nth-child(3){ /* retirando a margem do ultimo elemento de servico para nao passar para a linha de baixo*/
+        margin-right: 0;
+    }
+    .newsletter input{
+        width: 60%;
+        float: none;
+    }
+    .newsletter button{
+        width: 20%;
+        float: none;
+    }
+    }
+
+/* LARGE DEVICES  - WIDE SCREENS */
+@media screen and (min-width: 1280px){ /* quando chegar na largura de 1280 os elementos se reajustam*/
+    .btn-menu{
+        display: none;
+    }
+    .btn-close{
+        display: none;
+    }
+    .menu{
+        width: auto;
+        height: 56px;
+        line-height: 56px;
+        float: right;
+        background-color: #f5f5f5;
+        display: block !important; /* força o menu a reaparecer quando a janela é redimensionada */
+        position: static;
+    }
+    .menu li{
+        padding: 0;
+        float: left;
+    }
+    .menu li a{
+        color: #130400;
+        font-size: 1em;
+        padding: 15px;
+    }
+    .menu li a:hover{
+        border: none;
+        color: #da6709;
+    }
+    }
+
+
 
 
 
